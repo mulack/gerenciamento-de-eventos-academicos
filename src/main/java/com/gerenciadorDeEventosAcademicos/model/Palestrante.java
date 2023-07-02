@@ -23,12 +23,12 @@ public class Palestrante extends Participante {
 
         System.out.println("Qual atributo da atividade você deseja editar?");
         System.out.println("[1] - Nome");
-        System.out.println("[2] - Descrição");
-        System.out.println("[3] - Data de Início");
+        System.out.println("[2] - Descricao");
+        System.out.println("[3] - Data de Inicio");
         System.out.println("[4] - Data de Fim");
-        System.out.println("[5] - Hora de Início");
+        System.out.println("[5] - Hora de Inicio");
         System.out.println("[6] - Hora de Fim");
-        System.out.println("Escolha uma opcção:");
+        System.out.println("Escolha uma opcao:");
         int i = scanner.nextInt();
         handleEvent(i);
         scanner.close();
@@ -40,7 +40,7 @@ public class Palestrante extends Participante {
                 System.out.println("Defina o novo nome desejado:");
                 atividade.setNome(scanner.nextLine());
             case 2:
-                System.out.println("Escreva a nova descirção desejada:");
+                System.out.println("Escreva a nova descircao desejada:");
                 atividade.setDescricao(scanner.nextLine());
             case 3:
                 System.out.println("Defina uma nova data de inicio:");
@@ -49,13 +49,13 @@ public class Palestrante extends Participante {
                 System.out.println("Defina uma nova data de encerramento:");
                 atividade.setDataFim(scanner.nextLine());
             case 5:
-                System.out.println("Defina um novo horário para inicio:");
+                System.out.println("Defina um novo horario para inicio:");
                 atividade.setHoraInicio(scanner.nextLine());
             case 6:
-                System.out.println("Defina um novo horário para encerramento:");
+                System.out.println("Defina um novo horario para encerramento:");
                 atividade.setHoraInicio(scanner.nextLine());
             default:
-                System.out.println("Opção invalida, confira o numero digitado.");
+                System.out.println("Opcao invalida, confira o numero digitado.");
                 System.out.println("Tente novamente.");
                 editarAtividade(atividade);
         }
