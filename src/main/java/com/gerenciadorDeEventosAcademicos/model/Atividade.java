@@ -79,7 +79,7 @@ public class Atividade {
 
     public void setPalestrante(Palestrante palestrante) {
         if (palestrante == null){
-            System.out.println("O palestrante informado não existe \n Tente novamente");
+            System.out.println("O palestrante informado nao existe \n Tente novamente");
         } else {
             this.palestrante = palestrante;
         }
