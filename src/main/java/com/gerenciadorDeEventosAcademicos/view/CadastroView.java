@@ -39,7 +39,7 @@ public class CadastroView implements Observer{
         System.out.println("Digite o numero correspondente: ");
         tipoUsuario = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("Insira os dados para a realização do cadastro: ");
+        System.out.println("Insira os dados para a realizacao do cadastro: ");
         System.out.println("Digite seu nome: ");
         nome = scanner.nextLine();
         System.out.println("Defina seu email: ");
