@@ -30,32 +30,32 @@ public class Organizador extends Palestrante{
         System.out.println("Preencha os dados para a criacao do evento:");
         System.out.println("Nome:");
         evento.setNome(scanner.nextLine());
-        System.out.println("Descrição:");
+        System.out.println("Descricao:");
         evento.setDescricao(scanner.nextLine());
         System.out.println("---------------------------------------------------------");
-        System.out.println("Endereço >>> ");
+        System.out.println("Endereco >>> ");
         evento.criarEndereco();
-        System.out.println("Data de Início:");
+        System.out.println("Data de Inicio:");
         evento.setDataInicio(scanner.nextLine());
         System.out.println("Data de Fim:");
         evento.setDataFim(scanner.nextLine());
-        System.out.println("Hora de Início:");
+        System.out.println("Hora de Inicio:");
         evento.setHoraInicio(scanner.nextLine());
         return evento;
     }
 
     public void editarEvento(Evento evento, Model model){
         this.evento = evento;
-        System.out.println("Qual atributo do evento você deseja editar?");
+        System.out.println("Qual atributo do evento voce deseja editar?");
         System.out.println("[1] - Nome");
-        System.out.println("[2] - Descrição");
-        System.out.println("[3] - Endereço");
-        System.out.println("[4] - Data de Início");
+        System.out.println("[2] - Descricao");
+        System.out.println("[3] - Endereco");
+        System.out.println("[4] - Data de Inicio");
         System.out.println("[5] - Data de Fim");
-        System.out.println("[6] - Hora de Início");
+        System.out.println("[6] - Hora de Inicio");
         System.out.println("[7] - Hora de Fim");
         System.out.println("[8] - Voltar a tela anterior");
-        System.out.println("Escolha uma opcção:");
+        System.out.println("Escolha uma opcao:");
         int i = scanner.nextInt();
         scanner.nextLine();
         handleEvent1(i, model);
@@ -72,7 +72,7 @@ public class Organizador extends Palestrante{
                 DetalhesEventoView view = new DetalhesEventoView();
                 view.initDetalhesEventoView(model, evento);
             case 2:
-                System.out.println("Escreva a nova descirção desejada:");
+                System.out.println("Escreva a nova descricao desejada:");
                 String descricao = sc.nextLine();
                 evento.setDescricao(descricao);
                 DetalhesEventoView view0 = new DetalhesEventoView();
@@ -94,13 +94,13 @@ public class Organizador extends Palestrante{
                 DetalhesEventoView view3 = new DetalhesEventoView();
                 view3.initDetalhesEventoView(model, evento);
             case 6:
-                System.out.println("Defina um novo horário para inicio:");
+                System.out.println("Defina um novo horario para inicio:");
                 String horarioInicio = sc.nextLine();
                 evento.setHoraInicio(horarioInicio);
                 DetalhesEventoView view4 = new DetalhesEventoView();
                 view4.initDetalhesEventoView(model, evento);
             case 7:
-                System.out.println("Defina um novo horário para encerramento:");
+                System.out.println("Defina um novo horario para encerramento:");
                 String horarioFim = sc.nextLine();
                 evento.setHoraInicio(horarioFim);
                 DetalhesEventoView view5 = new DetalhesEventoView();
@@ -109,14 +109,14 @@ public class Organizador extends Palestrante{
                 DetalhesEventoView view6 = new DetalhesEventoView();
                 view6.initDetalhesEventoView(model, evento);
             default:
-                System.out.println("Opção invalida, confira o numero digitado.");
+                System.out.println("Opcao invalida, confira o numero digitado.");
                 System.out.println("Tente novamente.");
                 editarEvento(evento, model);
         }
     }
 
     public void editarEndereço(Endereco endereco){
-        System.out.println("Qual informação você deseja alterar?");
+        System.out.println("Qual informacao você deseja alterar?");
         String[] opcoes = {"[1] - Rua", "[2] - Numero", "[3] - Cidade", "[4] - Referencia"};
         System.out.println(opcoes[0]);
         System.out.println(opcoes[1]);
@@ -158,7 +158,7 @@ public class Organizador extends Palestrante{
         System.out.println("Nome:");
         String nome = scanner.nextLine();
         atividade.setNome(nome);
-        System.out.println("Descrição:");
+        System.out.println("Descricao:");
         String descricao = scanner.nextLine();
         atividade.setDescricao(descricao);
         System.out.println("Data de inicio:");
