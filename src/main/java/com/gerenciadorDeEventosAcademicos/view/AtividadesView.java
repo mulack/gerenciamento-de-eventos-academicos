@@ -55,7 +55,7 @@ public class AtividadesView implements Observer{
     }
 
     public void inscricaoRealizada(){
-        System.out.println("Inscrição realizada com sucesso!");
+        System.out.println("Inscricao realizada com sucesso!");
     }
     public Atividade getAtividadeEscolhida() {
         return atividadeEscolhida;
